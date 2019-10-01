@@ -1,0 +1,71 @@
+.wrapper {
+  height: 400px;
+  width: 500px;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.inputForm {
+  background-color: #e6e8e6;
+  padding: 10px 20px;
+  border-bottom: 2px solid #f15025;
+  display: flex;
+  justify-content: space-between;
+}
+
+.locationInput {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+  padding-left: 10px;
+}
+
+.submitButton {
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.results {
+  background-color: #ced0ce;
+  padding: 10px 30px;
+  font: 16px system-ui;
+}
+
+.innerWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  margin-top: 13px;
+  font: 16px system-ui;
+}
+
+.line {
+  border: 1px solid #e6e8e6;
+  width: 100%;
+  /* opacity: 0.2; */
+}
+
+.darkSkyLink {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  font: 11px system-ui;
+}
+
+.darkSkyLink a {
+  opacity: 0.7;
+  color: #f15025;
+}
+
+.darkSkyLink a:hover {
+  opacity: 1;
+}

@@ -1,0 +1,34 @@
+<div class="wrapper">
+
+  <form action="/" method="post" class="inputForm">
+    <input type="text" name="location" class="locationInput" placeholder="Enter a location">
+
+    <button type="submit" class="submitButton">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M10 17C6.13403 17 3 13.8662 3 10C3 6.13379 6.13403 3 10 3C13.866 3 17 6.13379 17 10C17 11.7002 16.3938 13.2588 15.3859 14.4717L20.7297 19.8154C21.1204 20.2061 21.1204 20.8394 20.7297 21.23C20.3392 21.6201 19.7061 21.6201 19.3156 21.23L13.8998 15.814C12.7853 16.563 11.4437 17 10 17ZM10 15C12.7615 15 15 12.7612 15 10C15 7.23877 12.7615 5 10 5C7.23853 5 5 7.23877 5 10C5 12.7612 7.23853 15 10 15Z"
+          fill="black" />
+      </svg>
+    </button>
+  </form>
+
+  <div class="results">
+    <div class="innerWrapper">
+      <h2>{{weather.first}}</h2>
+      <h2 id="temp">{{weather.temp}}</h2>
+    </div>
+    <div class="line"></div>
+    <div class="innerWrapper">
+      <div>
+        {{#each weather.place}}
+        <p id="location">{{this}}</p>
+        {{/each}}
+      </div>
+      <h3 id="sum">{{weather.summary}}</h3>
+    </div>
+  </div>
+
+  <div class="darkSkyLink">
+    <a href="https://darksky.net/poweredby/">Powered by Dark Sky</a>
+  </div>
+</div>
