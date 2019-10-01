@@ -5,7 +5,7 @@ const { main } = require("../lib/index")
 const router = Router()
 
 router.get("/", async (req, res) => {
-  let weather = await main(req.body.location)
+  let weather = await main("chester")
   res.render("index", { weather })
 })
 
